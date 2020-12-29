@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
        } else if(body.error) {
             callback(`unable to connect to location services`, undefined);
         } else {
-            callback(undefined,`${body.current.weather[0].description}, it is currently ${body.current.temp} degrees out. there is ${body.current.humidity} deg of humidity`);
+            callback(undefined,`${body.current.weather[0].description}, it is currently ${body.current.temp} degrees out. there is ${body.current.humidity} deg of humidity. Also, the Dew-point is: ${body.current.dew_point} and Wind-speed is ${body.current.wind_speed}`);
         }
    });
 }
