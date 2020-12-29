@@ -1,5 +1,3 @@
-console.log(`hello how are`);
-
 const weatherForm = document.querySelector(`form`);
 const inputElement = document.querySelector(`input`);
 const messageOne = document.querySelector(`#message-1`);
